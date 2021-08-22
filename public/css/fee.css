@@ -1,0 +1,193 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    font-family: 'Exo 2', sans-serif;
+    text-transform: capitalize;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    overflow-x: hidden;
+    background: content-box radial-gradient(rgb(233, 196, 196), rgb(242, 211, 235));
+      
+  }
+  /* --------------------------------------------------header-------------------------------------------------- */
+  #header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 1rem 0rem;
+    box-shadow: 0 .1rem .3rem #999;
+    z-index: 1100;
+    font-family: 'Poppins', sans-serif;
+  }
+  #header::before{
+      content: " ";
+      background-color: black;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.6;
+      height: 100%;
+  }
+  .logo img{
+    height: 5.5rem;
+
+  }
+#header nav ul{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      list-style: none;
+      margin-bottom: 0%;
+  }
+  #header nav ul li{
+      margin-right: 2rem;
+
+  }
+  #header nav ul li a{
+      padding: 5px;
+      border-radius: 40px;
+      color: rgb(255, 255, 255);
+      font-size: 2rem;
+      text-decoration: none;
+  }
+  #header nav ul li a:hover{
+      background-color:  rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      border: 1px solid black;
+  }
+  .uil-bars{
+    font-size: 3rem;
+    color: #333;
+    cursor: pointer;
+    display: none;
+  }
+  .active{
+    background-color: #394956;
+}
+
+.fee{
+    margin-top: 80px;
+}
+.fee p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    margin: 5px;
+}
+.fee h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+}
+.fee h1{
+    color: red;
+    font-family: 'Ubuntu', sans-serif;
+}
+.image{
+    background: repeat url("../img/admissionbg.jpg");
+    text-align: justify;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    
+  }
+  .fee a{
+        color: black;
+        font-size: 2rem;
+        text-decoration: none;
+        padding: 8px 43px;
+        background-color: rgb(248, 242, 230);
+        border-radius: 6px;
+        border: 1px solid black;
+margin: 5px 28px;
+  }
+  .fee a:hover{
+    background-color: rgb(184, 182, 180);
+  }
+
+
+
+
+
+  #footer {
+    width: 100%;
+    background: #333;
+    margin-top: 50px;
+  }
+  
+  #footer h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    padding: 2rem 0;
+    margin: 0;
+  }
+  
+  #footer h1 span {
+    color: #00B894;
+  }
+  
+
+
+
+
+  @media (max-width: 768px) {
+    html {
+        font-size: 50%;
+      }
+    #header .uil-bars {
+        display: block;
+        position: absolute;
+        right: 23px;
+        top: 10px;
+      }
+      #para{
+        content: " ";
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.9;
+        height: 100%;
+      }
+    #header nav {
+       position: fixed;
+       display: none;
+       top: 0%; left: 0%;
+       height: calc(100vh-5rem);
+       width: 100vw;
+       background: #fff;
+        }
+    #header nav ul {
+            height: 100%;
+            flex-flow: column;
+            justify-content: center;
+        }
+    #header nav ul li {
+            margin: 2rem 0;
+          }
+    #header nav ul li a {
+            font-size: 3rem;
+            color: black;
+          }
+  .nav-toggle{
+      top: 5.6rem;
+  }
+}
+
+
+@media (max-width: 900px){
+
+    .fee h1{
+        font-size: 6.5vw;
+    }
+}

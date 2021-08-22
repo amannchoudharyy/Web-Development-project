@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admission open 2021-2022</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="css/admission.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- --------------------------------------------------header----------------------------------- -->
+    <header id="header">
+
+        <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+
+        <nav id="para">
+            <ul class="menu">
+              <li><a href="/">home</a></li>
+                <li><a href="/admission" class="active">admission</a></li>
+                <li><a href="/aboutus">About Us</a></li>
+                <li><a href="/fee">fee submit</a></li>
+                <li><a href="/notice">notice</a></li>
+            </ul>
+        </nav>
+        <i class="uil uil-bars" id="btn" onclick="toggleHide()"></i>
+    </header>
+    <!-- ----------------------------------------------admission----------------------------------------- -->
+    <div class="admission" id="admission">
+        <h1>Admission Open 2021-22</h1>
+        <div class="admissionform">
+            <h2>Online Admission Form</h2>
+            <div class="image">
+                <h3>student information</h3>
+            </div>
+        </div>
+        <div class="formbg">
+            <div class="form">
+                <div class="regform">
+                    <h1>
+                        Registration Form</h1>
+                </div>
+                <div class="main">
+
+                   <form action="/admission" method="POST">
+                        <div id="name" class="cont">
+
+                            <h2 class="name">
+                                Name </h2>
+                            <div class="fill">
+                                <input class="firstname" type="text" name="first_name"><br>
+                                <label class="firstlabel">first name</label>
+                                <input class="lastname" type="text" name="last_name"><br>
+                                <label class="lastlabel">last name</label>
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <h2 class="name">
+                                address </h2>
+                            <div class="fill">
+                                <input class="company" type="text" name="address">
+
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <h2 class="name">
+                                Email</h2>
+                            <div class="fill">
+                                <input class="email" type="email" name="email">
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <h2 class="name">
+                                Phone</h2>
+                            <div class="fill">
+                                <input class="Code" type="text" name="area_code" value="91">
+                                <label class="area-code">Area Code</label>
+                                <input class="number" type="text" name="phone">
+                                <label class="phone-number">Phone Number</label>
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <h2 class="name">
+                                caurse</h2>
+                            <div class="fill">
+                                <select class="option" name="caurse">
+                                    <option disabled="disabled" selected="selected">Choose caurse</option>
+                                    <option>b.tech (CSE)</option>
+                                    <option>b.tech (ME)</option>
+                                    <option>b.tech (CE)</option>
+                                    <option>Bachelors in Computer Application</option>
+                                    <option>Bachelors in Business Administration</option>
+                                    <option>Masters in Business Administration</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <h2 id="coustomer">
+                                Gender</h2>
+                            <div class="fill">
+                                <label class="radio">
+                                    <input class="radio-one" type="radio" value="male" checked="checked" Text='female' name="gender">
+                                    <span class="checkmark"></span>
+                                    Male
+                                    
+                                </label>
+
+                                <label class="radio">
+                                    <input class="radio-two" type="radio" Text='female' value="female" name="gender">
+                                    <span class="checkmark"></span>
+                                    female
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" value="Register">Register</button>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <h3>Contact Us for any Doubt</h3><br><br>
+            <a href="https://api.whatsapp.com/send?phone=919625870942%20&text=Dear%20Sir,%20I%20am%20looking%20for%20admission%20in%20Aravali.%20My%20name%20is"
+                id="whatsapp" target="_blank"><img src="img/whatsapp.svg" alt="">whatsapp us</a>
+            <a href="tel:+919625870942" id="call" target="_blank"><img src="img/call.svg" alt="">call us</a>
+        </div>
+    </div>
+     <!-- ----------------------------------footer----------------------------------- -->
+     <section id="footer">
+
+        <h1>&copy; copyright 2021 <span>Aman choudhary</span></h1>
+        
+        </section>
+    <script src="js/js.js"></script>
+</body>
+
+</html>
